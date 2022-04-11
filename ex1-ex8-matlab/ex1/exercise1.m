@@ -115,7 +115,7 @@ num_iters = 400;
 
 % Init Theta and Run Gradient Descent
 theta = zeros(3, 1);
-[theta, ~] = gradientDescentMulti(X, y, theta, alpha, num_iters);
+[theta, ~] = gradientDescent(X, y, theta, alpha, num_iters);
 
 % Display gradient descent's result
 fprintf('\nTheta computed from gradient descent:\n%f\n%f\n%f\n',theta(1),theta(2),theta(3))
@@ -141,7 +141,7 @@ num_iters = 100;
 
 % Init Theta and Run Gradient Descent
 theta = zeros(3, 1);
-[~, J_history] = gradientDescentMulti(X, y, theta, alpha, num_iters);
+[~, J_history] = gradientDescent(X, y, theta, alpha, num_iters);
 
 % Plot the convergence graph
 plot(1:num_iters, J_history, '-b', 'LineWidth', 2);
@@ -155,7 +155,7 @@ num_iters = 400;
 
 % Init Theta and Run Gradient Descent
 theta = zeros(3, 1);
-[theta, ~] = gradientDescentMulti(X, y, theta, alpha, num_iters);
+[theta, ~] = gradientDescent(X, y, theta, alpha, num_iters);
 
 % Display gradient descent's result
 fprintf('\nTheta computed from gradient descent:\n%f\n%f\n%f\n',theta(1),theta(2),theta(3))
